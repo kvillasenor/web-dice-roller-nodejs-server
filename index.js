@@ -38,6 +38,7 @@ app.get('/random-num', (request, response) => {
 	//generates the random number (from the previous web dice roller assignment)
 	let random = Math.floor(Math.random() * 6) + 1
 
+	//Converts the JavaScript object into into a JSON-formatted string
 	response.json({dice: random})
 })
 
